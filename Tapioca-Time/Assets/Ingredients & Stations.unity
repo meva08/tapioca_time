@@ -429,7 +429,7 @@ GameObject:
   - component: {fileID: 342859236}
   m_Layer: 0
   m_Name: Thai Tea
-  m_TagString: Untagged
+  m_TagString: Tea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -476,7 +476,7 @@ GameObject:
   - component: {fileID: 348519072}
   m_Layer: 0
   m_Name: Popping Boba
-  m_TagString: Untagged
+  m_TagString: Boba
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -557,7 +557,7 @@ GameObject:
   - component: {fileID: 818994913}
   m_Layer: 0
   m_Name: Black Tea
-  m_TagString: Untagged
+  m_TagString: Tea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -838,7 +838,7 @@ GameObject:
   - component: {fileID: 1109342144}
   m_Layer: 0
   m_Name: Whole Milk
-  m_TagString: Untagged
+  m_TagString: Milk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -951,7 +951,7 @@ GameObject:
   - component: {fileID: 1682446972}
   m_Layer: 0
   m_Name: Skim Milk
-  m_TagString: Untagged
+  m_TagString: Milk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -998,7 +998,7 @@ GameObject:
   - component: {fileID: 2091775339}
   m_Layer: 0
   m_Name: Regular Boba
-  m_TagString: Untagged
+  m_TagString: Boba
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

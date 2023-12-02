@@ -9,8 +9,8 @@ public class IngredientManager : MonoBehaviour
 
     public bool AddIngredient(int ingredientID)
     {
-        // Check if the ingredient is not already collected
-        if (!collectedIngredientIDs.Contains(ingredientID))
+        // Check if the type of ingredient is not already collected
+        if (!collectedIngredientIDs.Exists(i => i.GetType() == ingredientID.GetType()))
         {
             collectedIngredientIDs.Add(ingredientID);
             return true; // Ingredient added successfully
