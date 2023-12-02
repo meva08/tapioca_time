@@ -7,16 +7,14 @@ public class IngredientManager : MonoBehaviour
 {
     public List<int> collectedIngredientIDs = new List<int>();
 
-    public bool AddIngredient(int ingredientID)
+    public void AddIngredient(int ingredientID)
     {
         // Check if the type of ingredient is not already collected
         if (!collectedIngredientIDs.Exists(i => i.GetType() == ingredientID.GetType()))
         {
             collectedIngredientIDs.Add(ingredientID);
-            return true; // Ingredient added successfully
+            // Ingredient added successfully
         }
-
-        return false; // Ingredient already collected
     }
 
     // Property to get the total sum

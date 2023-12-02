@@ -10,6 +10,8 @@ public class TeaUIManager : MonoBehaviour
     public GameObject teaOptionPrefab;
     public Transform optionPanel;
 
+    private IngredientManager ingredientManager;
+
     private void Awake()
     {
         Instance = this;
@@ -36,6 +38,9 @@ public class TeaUIManager : MonoBehaviour
     {
         // Handle the user's selection (e.g., use the selected tea option)
         Debug.Log("Selected Tea: " + selectedTeaOption.ingredientName);
+
+        // Add the ingredient
+        ingredientManager.AddIngredient(selectedTeaOption.ingredientID);
 
         // Optionally, clear the UI options after selection
         ClearOptions();

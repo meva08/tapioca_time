@@ -11,6 +11,8 @@ public class BobaUIManager : MonoBehaviour
     public Transform optionPanel;
     public Image stationImage;
 
+    private IngredientManager ingredientManager;
+
     private void Awake()
     {
         Instance = this;
@@ -42,6 +44,9 @@ public class BobaUIManager : MonoBehaviour
     {
         // Handle the user's selection (e.g., use the selected boba option)
         Debug.Log("Selected Boba: " + selectedBobaOption.ingredientName);
+
+        // Add the ingredient
+        ingredientManager.AddIngredient(selectedBobaOption.ingredientID);
 
         // Optionally, clear the UI options after selection
         ClearOptions();

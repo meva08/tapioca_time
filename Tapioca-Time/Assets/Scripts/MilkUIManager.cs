@@ -10,6 +10,8 @@ public class MilkUIManager : MonoBehaviour
     public GameObject milkOptionPrefab;
     public Transform optionPanel;
 
+    private IngredientManager ingredientManager;
+
     private void Awake()
     {
         Instance = this;
@@ -36,6 +38,9 @@ public class MilkUIManager : MonoBehaviour
     {
         // Handle the user's selection (e.g., use the selected milk option)
         Debug.Log("Selected Milk: " + selectedMilkOption.ingredientName);
+
+        // Add the ingredient
+        ingredientManager.AddIngredient(selectedMilkOption.ingredientID);
 
         // Optionally, clear the UI options after selection
         ClearOptions();
