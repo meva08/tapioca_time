@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     float horizontal; // use global varaiabl 
     float vertical;
 
-    Animator animator;
+    
     Vector2 lookDirection = new Vector2(1,0); 
 
     // Why are you storing the look direction? Because compared to the Robot, Ruby can stand still.  When she stands still, Move X and Y are both 0, so the State Machine doesn’t know which direction to use unless we tell it. 
@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
         // This code is inside the Start function, so it’s executed only once when the game starts. It tells Unity to give you the Rigidbody2D that is attached to the same GameObject that your script is attached to, which is your character.
 
 
-         animator = GetComponent<Animator>();
+        
     }
 
     // Update is called once per frame
@@ -55,9 +55,7 @@ public class PlayerController : MonoBehaviour
 
         }
                 
-        animator.SetFloat("Look X", lookDirection.x);
-        animator.SetFloat("Look Y", lookDirection.y);
-        animator.SetFloat("Speed", move.magnitude); // speed (the length of the move vector). 
+        
     }
 
     void FixedUpdate() //FixedUpdate influences the physics system -> instead of the unstable Update, based on frame rate, this is fixed
