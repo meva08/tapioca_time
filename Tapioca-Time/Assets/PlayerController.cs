@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
 
     public float speed = 3.0f;
+
     
     
     Rigidbody2D rigidbody2d; // This creates a new variable called rigidbody2d to store the Rigidbody and access it from anywhere inside your script.
@@ -52,8 +53,17 @@ public class PlayerController : MonoBehaviour
             // As said before, Vector2 types store positions, but they can also store directions! 
 
         }
-                
-        
+
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            RaycastHit2D hit = Physics2D.Raycast(rigidbody2d.position + Vector2.up * 0.2f, lookDirection, 1.5f, LayerMask.GetMask("Station"));
+            if (hit.collider != null)
+            {
+                Debug.Log("Raycast has hit the object " + hit.collider.gameObject);
+            }
+        }
+
+
     }
 
     void FixedUpdate() //FixedUpdate influences the physics system -> instead of the unstable Update, based on frame rate, this is fixed
