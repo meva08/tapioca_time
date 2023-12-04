@@ -59,6 +59,11 @@ public class PlayerController : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(rigidbody2d.position + Vector2.up * 0.2f, lookDirection, 1.5f, LayerMask.GetMask("Station"));
             if (hit.collider != null)
             {
+                NewBobaStation station = hit.collider.GetComponent<NewBobaStation>();
+                if (station != null)
+                {
+                    station.DisplayDialog();
+                }
                 Debug.Log("Raycast has hit the object " + hit.collider.gameObject);
             }
         }
