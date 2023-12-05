@@ -3,18 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class NewBobaStation : MonoBehaviour
-{
-    // Connect to UI Object?
-    // public variables 
+{   
     // Start is called before the first frame update
+ 
     public float displayTime = 2.0f;
     public GameObject dialogBox;
+    public GameObject failBox;
+
+    public GameObject flow; // reference gameflow game object 
+
+    public bool GetBoba; // wait on Maryeva for centralized bool variable? 
+
+    AudioSource audioSource;
+    public AudioClip boba; 
+
+    // Leave room for Maryeva's code for order system -> you already have this
     float timerDisplay;
+
+   
+
     void Start()
     {
         dialogBox.SetActive(false);
-      
+        failBox.SetActive(false);
+
         timerDisplay = -1.0f;
+        audioSource = GetComponent<AudioSource>();
 
     }
 
@@ -28,6 +42,7 @@ public class NewBobaStation : MonoBehaviour
             if (timerDisplay < 0)
             {
                 dialogBox.SetActive(false);
+                failBox.SetActive(false);
             }
         }
 
@@ -43,6 +58,26 @@ public class NewBobaStation : MonoBehaviour
     public void DisplayDialog()
     {
         timerDisplay = displayTime;
-        dialogBox.SetActive(true);
+        if (GetBoba == false)
+        {
+            dialogBox.SetActive(true);
+
+            gameflow order = flow.GetComponent<gameflow>();
+
+            order.AddValue(100);
+
+            GetBoba = true;
+
+            audioSource.PlayOneShot(boba);
+
+
+
+           
+
+        }
+        else
+        {
+            failBox.SetActive(true); 
+        }
     }
 }
