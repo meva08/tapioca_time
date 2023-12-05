@@ -565,6 +565,22 @@ PrefabInstance:
       propertyPath: m_text
       value: Popping Boba Get!
       objectReference: {fileID: 0}
+    - target: {fileID: 2669769803492193225, guid: b9fa5917fd90c6444a6a5199c81b3aa5, type: 3}
+      propertyPath: m_Size.x
+      value: 2.0351524
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669769803492193225, guid: b9fa5917fd90c6444a6a5199c81b3aa5, type: 3}
+      propertyPath: m_Size.y
+      value: 2.5234652
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669769803492193225, guid: b9fa5917fd90c6444a6a5199c81b3aa5, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.017576218
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669769803492193225, guid: b9fa5917fd90c6444a6a5199c81b3aa5, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.8090677
+      objectReference: {fileID: 0}
     - target: {fileID: 5354326714299227089, guid: b9fa5917fd90c6444a6a5199c81b3aa5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.01
@@ -1443,7 +1459,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.003633991, y: -0.113180675}
+  m_Offset: {x: 0.003633991, y: -0.08309766}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1454,7 +1470,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.22309378, y: 0.09363864}
+  m_Size: {x: 0.22309378, y: 0.15380467}
   m_EdgeRadius: 0
 --- !u!1001 &1471488457
 PrefabInstance:
