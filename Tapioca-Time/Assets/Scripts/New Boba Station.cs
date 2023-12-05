@@ -7,7 +7,7 @@ public class NewBobaStation : MonoBehaviour
     // Connect to UI Object?
     // public variables 
     // Start is called before the first frame update
-    public float displayTime = 4.0f;
+    public float displayTime = 2.0f;
     public GameObject dialogBox;
     float timerDisplay;
     void Start()
