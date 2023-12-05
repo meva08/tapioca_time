@@ -70,6 +70,8 @@ public class NewBobaStation : MonoBehaviour
 
             audioSource.PlayOneShot(boba);
 
+            // display the UI element of the boba -> create a new canvas 
+
 
 
            
