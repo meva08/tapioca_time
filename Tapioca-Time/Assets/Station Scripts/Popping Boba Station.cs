@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
-public class NewBobaStation : MonoBehaviour
-{   
+public class PoppingBobaStation : MonoBehaviour
+{
     public float displayTime = 2.0f; // variables for display time of text
     float timerDisplay;
-    
+
     public GameObject dialogBox; // set variables for the text UI objects
     public GameObject failBox;
-    public Image normalBoba; // reference UI object
+    public Image poppingBoba; // reference UI object
 
     public GameObject flow; // reference gameflow game object 
 
@@ -25,7 +24,7 @@ public class NewBobaStation : MonoBehaviour
     {
         dialogBox.SetActive(false); // set all UI elements as false at start
         failBox.SetActive(false);
-        normalBoba.enabled = false;
+        poppingBoba.enabled = false;
 
         timerDisplay = -1.0f; // set timer to negative
         audioSource = GetComponent<AudioSource>(); // reference AudioSource
@@ -52,19 +51,19 @@ public class NewBobaStation : MonoBehaviour
         {
             dialogBox.SetActive(true); // show text 
 
-            order.AddValue(100); // add to currentValue
+            order.AddValue(200); // add to currentValue
 
             order.getBoba = true; // set variable to true
 
             audioSource.PlayOneShot(bobaGet); // play sound effect
 
-            normalBoba.enabled = true; // display boba UI icon
+            poppingBoba.enabled = true; // display boba UI icon
 
         }
         else
         {
             failBox.SetActive(true); // show text -> unable to get more boba
-            
+
             audioSource.PlayOneShot(error); // play sound effect
         }
     }
