@@ -79,6 +79,16 @@ public class PlayerController : MonoBehaviour
                 {
                     TTstation.DisplayDialog();
                 }
+                WholeFridge WMstation = hit.collider.GetComponent<WholeFridge>();
+                if (WMstation != null)
+                {
+                    WMstation.DisplayDialog();
+                }
+                SkimFridge SMstation = hit.collider.GetComponent<SkimFridge>();
+                if (SMstation != null)
+                {
+                    SMstation.DisplayDialog();
+                }
                 Debug.Log("Raycast has hit the object " + hit.collider.gameObject);
             }
         }
