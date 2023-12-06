@@ -69,6 +69,16 @@ public class PlayerController : MonoBehaviour
                 {
                     PBstation.DisplayDialog();
                 }
+                BlackTeaStation BTstation = hit.collider.GetComponent<BlackTeaStation>();
+                if (BTstation != null)
+                {
+                    BTstation.DisplayDialog();
+                }
+                ThaiTeaStation TTstation = hit.collider.GetComponent<ThaiTeaStation>();
+                if (TTstation != null)
+                {
+                    TTstation.DisplayDialog();
+                }
                 Debug.Log("Raycast has hit the object " + hit.collider.gameObject);
             }
         }
