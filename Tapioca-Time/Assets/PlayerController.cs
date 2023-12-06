@@ -89,6 +89,11 @@ public class PlayerController : MonoBehaviour
                 {
                     SMstation.DisplayDialog();
                 }
+                Sink sink = hit.collider.GetComponent<Sink>();
+                if (sink != null)
+                {
+                    sink.DisplayDialog();
+                }
                 Debug.Log("Raycast has hit the object " + hit.collider.gameObject);
             }
         }

@@ -26,4 +26,8 @@ public class gameflow : MonoBehaviour
     {
         currentValue += value;
     }
+    public void ClearValue()
+    {
+        currentValue = 0;
+    }
 }
