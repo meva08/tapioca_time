@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
 
     public float speed = 3.0f;
 
+    Animator animator;
+
     
     
     Rigidbody2D rigidbody2d; // This creates a new variable called rigidbody2d to store the Rigidbody and access it from anywhere inside your script.
@@ -22,13 +24,13 @@ public class PlayerController : MonoBehaviour
     {
         rigidbody2d = GetComponent<Rigidbody2D>(); //include the game objet 
 
-        
+        animator = GetComponent<Animator>();
 
 
         // This code is inside the Start function, so it’s executed only once when the game starts. It tells Unity to give you the Rigidbody2D that is attached to the same GameObject that your script is attached to, which is your character.
 
 
-        
+
     }
 
     // Update is called once per frame
@@ -53,6 +55,11 @@ public class PlayerController : MonoBehaviour
             // As said before, Vector2 types store positions, but they can also store directions! 
 
         }
+
+        animator.SetFloat("Move X", lookDirection.x);
+        animator.SetFloat("Move Y", lookDirection.y);
+        animator.SetFloat("Speed", move.magnitude);
+
 
         if (Input.GetKeyDown(KeyCode.X))
         {
