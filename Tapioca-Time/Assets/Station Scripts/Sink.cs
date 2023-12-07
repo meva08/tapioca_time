@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Sink : MonoBehaviour
 {
@@ -57,13 +58,25 @@ public class Sink : MonoBehaviour
         else
         {
             dialogBox.SetActive(true); // show text 
-            ingredientUI.SetActive(false); 
+            //ingredientUI.SetActive(false); 
 
-            
+            foreach (Transform child in ingredientUI.transform)
+            {
+                // Check if the child has an Image component
+                Image imageComponent = child.GetComponent<Image>();
 
-            order.getMilk = false; // set variable to false - cup is empty
+                // If the child has an Image component, deactivate it
+                if (imageComponent != null)
+                {
+                    imageComponent.enabled = false; // Set image component inactive
+                }
+            }
+
+
+
+                order.getMilk = false; // set variable to false - cup is empty
             order.getTea = false;
-            order.getMilk = false;
+            order.getBoba = false;
 
             order.ClearValue();
 
@@ -73,6 +86,7 @@ public class Sink : MonoBehaviour
 
 
         }
+        
     }
 }
 
