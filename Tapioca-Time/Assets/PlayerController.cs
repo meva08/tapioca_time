@@ -66,6 +66,14 @@ public class PlayerController : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(rigidbody2d.position + Vector2.up * 0.2f, lookDirection, 1.5f, LayerMask.GetMask("Station"));
             if (hit.collider != null)
             {
+                // find which object or which type of object was hit
+                // example:
+                // if (hit.colllider.tag == "Skim Fridge" {
+                //  SkimFridge SMStation  = hit.collider.GetComponent<SkimFridge>();
+                // SMstation.DisplayDialog();
+                // }
+
+
                 NewBobaStation RBstation = hit.collider.GetComponent<NewBobaStation>();
                 if (RBstation != null)
                 {
@@ -100,6 +108,11 @@ public class PlayerController : MonoBehaviour
                 if (sink != null)
                 {
                     sink.DisplayDialog();
+                }
+                BobaShakerGame game = hit.collider.GetComponent<BobaShakerGame>();
+                if (game != null)
+                {
+                    game.hit = true;
                 }
                 Debug.Log("Raycast has hit the object " + hit.collider.gameObject);
             }

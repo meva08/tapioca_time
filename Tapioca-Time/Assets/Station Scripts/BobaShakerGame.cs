@@ -5,9 +5,13 @@ using UnityEngine;
 public class BobaShakerGame : MonoBehaviour
 {
     // Start is called before the first frame update
-    public bool variable;
+    public bool hit;
     public int points;
     public GameObject controller;
+    AudioSource audiosource;
+    public AudioClip click;
+
+
     void Start()
     {
         
@@ -16,18 +20,20 @@ public class BobaShakerGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (variable == true)
+        if (hit == true)
         {
-            // controller. GetComponent(YourScript).enabled = false;
+            //controller.GetComponent(PlayerController).enabled = false;
             if (Input.GetKeyDown(KeyCode.X))
             {
                 points += 1;
+                Debug.Log("points" + points);
+                audiosource.PlayOneShot(click);
                 // sound effect here
             }
             if (points >= 30)
             {
-                variable = false;
-                // controller. GetComponent(YourScript).enabled = true;
+                hit = false;
+                //controller.GetComponent(PlayerController).enabled = true;
             }
         }
     }

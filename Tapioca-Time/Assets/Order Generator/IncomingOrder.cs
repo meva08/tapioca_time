@@ -1,19 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class OrderSystem : MonoBehaviour
 {
-    public IngredientManager ingredientManager;
-    public Sprite orderSprite;
+    public GameObject dialogBox;
+    public TMP_Text debugText;
+    public bool orderCompleted;
+    public int order_value;
 
     // Start the order system
     private void Start()
     {
-        StartCoroutine(GenerateRandomOrder());
+        // Generate the first order
+        GenerateRandomOrder();
     }
 
-    // Static method to get the name based on the ID
+    // Continue generating orders as the user completes them
+    private void Update()
+    {
+        if(orderCompleted)
+            {
+                orderCompleted = false;
+                GenerateRandomOrder();
+            }
+    }
+
+
+    // Static method tox get the name based on the ID
     public static string GetIngredientName(int id)
     {
         switch (id)
@@ -28,24 +44,26 @@ public class OrderSystem : MonoBehaviour
         }
     }
 
-    // Coroutine to generate random orders
-    private IEnumerator GenerateRandomOrder()
+    // Generate random orders
+    private void GenerateRandomOrder()
     {
-        while (true)
-        {
             // Generate a random order with one type of boba, tea, and milk each
             int randomBoba = GetRandomBobaID();
             int randomTea = GetRandomTeaID();
             int randomMilk = GetRandomMilkID();
 
-            int order_value = randomBoba + randomTea + randomMilk;
+            order_value = randomBoba + randomTea + randomMilk;
 
             // Display the order 
             Debug.Log($"New Order: {GetIngredientName(randomBoba)}, {GetIngredientName(randomTea)}, {GetIngredientName(randomMilk)}");
 
-            // Wait for some time before generating the next order
-            yield return new WaitForSeconds(20f);
-        }
+            // Update the UI Text element with the Debug log text
+            Update();
+
+            void Update() 
+            {
+            debugText.SetText($"New Order: \r\n {GetIngredientName(randomBoba)} \r\n {GetIngredientName(randomTea)} \r\n {GetIngredientName(randomMilk)}");
+            }
     }
 
     // Get a random Boba ID
