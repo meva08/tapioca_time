@@ -2621,7 +2621,7 @@ MonoBehaviour:
   hit: 0
   points: 0
   controller: {fileID: 1364499626}
-  click: {fileID: 8300000, guid: 490bfbc72255342408984f60044487de, type: 3}
+  click: {fileID: 8300000, guid: 1eb7cbaf61d23a64bbd36c0a38b5cb0c, type: 3}
 --- !u!82 &1619757676
 AudioSource:
   m_ObjectHideFlags: 0

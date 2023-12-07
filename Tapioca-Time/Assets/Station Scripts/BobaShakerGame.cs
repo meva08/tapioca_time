@@ -14,7 +14,7 @@ public class BobaShakerGame : MonoBehaviour
 
     void Start()
     {
-        
+        audiosource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
