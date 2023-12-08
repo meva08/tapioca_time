@@ -763,7 +763,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -204, y: 150}
+  m_AnchoredPosition: {x: -204, y: 137}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &413616570
@@ -3308,8 +3308,16 @@ MonoBehaviour:
   hit: 0
   points: 0
   controller: {fileID: 1364499626}
+  gameflow: {fileID: 996218863}
   click: {fileID: 8300000, guid: 1eb7cbaf61d23a64bbd36c0a38b5cb0c, type: 3}
+  error: {fileID: 8300000, guid: 1ed8fb76fc64e4e46847348138782234, type: 3}
+  cash: {fileID: 8300000, guid: abdbbfd33a46f4549987385f85c536b5, type: 3}
   cam: {fileID: 519420028}
+  shake: {fileID: 541612347}
+  results: {fileID: 1933919821}
+  resulttext: {fileID: 176622718}
+  ingredientUI: {fileID: 1318639728}
+  displayTime: 2
 --- !u!82 &1619757676
 AudioSource:
   m_ObjectHideFlags: 0
