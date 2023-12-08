@@ -12,6 +12,8 @@ public class BobaShakerGame : MonoBehaviour
     public AudioClip click;
      public GameObject cam;
 
+    PlayerController move; 
+
 
     void Start()
     {
@@ -28,11 +30,11 @@ public class BobaShakerGame : MonoBehaviour
             move.enabled = false;
             if (Input.GetKeyDown(KeyCode.X))
             {
-                cam.GetComponent<playermoney> ().addMoney (50);
+                
                 points += 1;
                 Debug.Log("points" + points);
                 audiosource.PlayOneShot(click);
-                // sound effect here
+                
             }
             if (points >= 30)
             {
@@ -40,7 +42,7 @@ public class BobaShakerGame : MonoBehaviour
                     // show success box
                 // else send the user on their way to try again
                     // show failure box 
-                // add money
+                cam.GetComponent<playermoney>().addMoney(50);// add money
                 hit = false;
                 move.enabled = true;
             }
