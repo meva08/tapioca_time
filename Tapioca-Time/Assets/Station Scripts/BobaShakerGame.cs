@@ -10,11 +10,12 @@ public class BobaShakerGame : MonoBehaviour
     public GameObject controller;
     AudioSource audiosource;
     public AudioClip click;
+     public GameObject cam;
 
 
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
@@ -25,6 +26,7 @@ public class BobaShakerGame : MonoBehaviour
             //controller.GetComponent(PlayerController).enabled = false;
             if (Input.GetKeyDown(KeyCode.X))
             {
+                cam.GetComponent<playermoney> ().addMoney (50);
                 points += 1;
                 Debug.Log("points" + points);
                 audiosource.PlayOneShot(click);
