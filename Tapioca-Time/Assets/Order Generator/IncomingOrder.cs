@@ -10,12 +10,13 @@ public class OrderSystem : MonoBehaviour
     public TMP_Text debugText;
     public bool orderCompleted;
     public int order_value;
+    public static int current_order;
 
     // Start the order system
     private void Start()
     {
         // Generate the first order
-        GenerateRandomOrder();
+        current_order = GenerateRandomOrder();
     }
 
     // Continue generating orders as the user completes them
@@ -24,7 +25,7 @@ public class OrderSystem : MonoBehaviour
         if(orderCompleted)
             {
                 orderCompleted = false;
-                GenerateRandomOrder();
+                current_order = GenerateRandomOrder();
             }
     }
 
@@ -45,7 +46,7 @@ public class OrderSystem : MonoBehaviour
     }
 
     // Generate random orders
-    private void GenerateRandomOrder()
+    public int GenerateRandomOrder()
     {
             // Generate a random order with one type of boba, tea, and milk each
             int randomBoba = GetRandomBobaID();
@@ -64,6 +65,7 @@ public class OrderSystem : MonoBehaviour
             {
             debugText.SetText($"New Order: \r\n {GetIngredientName(randomBoba)} \r\n {GetIngredientName(randomTea)} \r\n {GetIngredientName(randomMilk)}");
             }
+            return order_value;
     }
 
     // Get a random Boba ID

@@ -22,20 +22,21 @@ public class BobaShakerGame : MonoBehaviour
     {
         if (hit == true)
         {
-            //controller.GetComponent(PlayerController).enabled = false;
-            if (Input.GetKeyDown(KeyCode.X))
-            {
-                points += 1;
-                Debug.Log("points" + points);
-                audiosource.PlayOneShot(click);
-                // sound effect here
-            }
-            if (points >= 30)
-            {
-                hit = false;
-                //controller.GetComponent(PlayerController).enabled = true;
-            }
+            ServeOrder(OrderSystem.current_order, Game_manager.currentValue);
         }
+    }
+
+    public void ServeOrder(int order, int playerorder)
+    {
+        //controller.GetComponent(PlayerController).enabled = false;
+            if (order==playerorder)
+                {
+                    Debug.Log("correct");
+                }
+                else
+                {
+                    Debug.Log("not right");
+                }
     }
     
 }

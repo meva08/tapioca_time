@@ -46,7 +46,7 @@ public class Sink : MonoBehaviour
     public void DisplayDialog() // function for station 
     {
         timerDisplay = displayTime; // once invoked, set display time to positive value
-        gameflow order = flow.GetComponent<gameflow>(); // reference the script of gameflow
+        Game_manager order = flow.GetComponent<Game_manager>(); // reference the script of gameflow
 
         if (!order.getMilk && !order.getTea && !order.getBoba) // if you don't have anything in cup, error message
         {
