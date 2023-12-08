@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
 
         animator.SetFloat("Move X", lookDirection.x);
         animator.SetFloat("Move Y", lookDirection.y);
-        animator.SetFloat("Speed", move.magnitude);
+       
 
 
         if (Input.GetKeyDown(KeyCode.X))

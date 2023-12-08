@@ -15,7 +15,8 @@ public class BobaShakerGame : MonoBehaviour
 
     void Start()
     {
-       
+        audiosource = GetComponent<AudioSource>();
+        move = controller.GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
@@ -23,7 +24,8 @@ public class BobaShakerGame : MonoBehaviour
     {
         if (hit == true)
         {
-            //controller.GetComponent(PlayerController).enabled = false;
+            // show dialog box to shake
+            move.enabled = false;
             if (Input.GetKeyDown(KeyCode.X))
             {
                 cam.GetComponent<playermoney> ().addMoney (50);
@@ -34,8 +36,13 @@ public class BobaShakerGame : MonoBehaviour
             }
             if (points >= 30)
             {
+                // check the code and if match then pass and set bool = true
+                    // show success box
+                // else send the user on their way to try again
+                    // show failure box 
+                // add money
                 hit = false;
-                //controller.GetComponent(PlayerController).enabled = true;
+                move.enabled = true;
             }
         }
     }
