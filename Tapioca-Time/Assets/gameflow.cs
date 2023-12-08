@@ -18,10 +18,6 @@ public class gameflow : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        Debug.Log("CurrentValue = " + currentValue);
-    }
     public void AddValue(int value)
     {
         currentValue += value;
