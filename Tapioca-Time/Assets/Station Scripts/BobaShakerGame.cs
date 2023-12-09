@@ -131,6 +131,7 @@ public class BobaShakerGame : MonoBehaviour
             else
             {
                 timerDisplay = displayTime;
+                
                 resulttext.SetText("You don't have all the ingredients!");
                 results.SetActive(true);
                 audiosource.PlayOneShot(error);
