@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class gameflow : MonoBehaviour
 {
-    public static int orderValue=121;
-    public static int currentValue= 000 ;
+    public static int orderValue = 121;
+    public static int currentValue = 000 ;
+
+    public GameObject OrderSystem;
+
+    OrderSystem ordersystem;
     public static float[] orderTimers= { 0, 0, 0 };
 
     public bool getBoba;
@@ -14,7 +18,7 @@ public class gameflow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        ordersystem = OrderSystem.GetComponent<OrderSystem>();
     }
 
     // Update is called once per frame
@@ -29,5 +33,18 @@ public class gameflow : MonoBehaviour
     public void ClearValue()
     {
         currentValue = 0;
+    }
+    public bool Comparison()
+    {
+        if (ordersystem.order_value == currentValue)
+        {
+            Debug.Log ("true");
+            return true;
+        }
+        else 
+        {
+            Debug.Log ("false");
+            return false; 
+        }
     }
 }

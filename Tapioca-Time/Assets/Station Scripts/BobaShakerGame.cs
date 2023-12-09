@@ -74,7 +74,8 @@ public class BobaShakerGame : MonoBehaviour
                 }
                 if (points >= 30)
                 {
-                    // if (check is successful)
+                    if (order.Comparison() == true)
+                    {
                     //check the code and if match then pass 
                         
                     
@@ -87,6 +88,12 @@ public class BobaShakerGame : MonoBehaviour
                         // and set bool = true for next order
 
                         audiosource.PlayOneShot(cash);
+                    }
+                    else
+                    {
+                        resulttext.SetText("Not the right order...");
+                        results.SetActive(true);
+                    }
 
                     // else send the user on their way to try again
                         // resulttext.setText("Not the right order...")
