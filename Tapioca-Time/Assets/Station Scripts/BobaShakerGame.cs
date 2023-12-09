@@ -29,6 +29,9 @@ public class BobaShakerGame : MonoBehaviour
 
     public GameObject ingredientUI;
 
+    public GameObject OrderSystem;
+
+    OrderSystem ordersystem;
     
 
     public float displayTime = 2.0f; // variables for display time of text
@@ -42,6 +45,7 @@ public class BobaShakerGame : MonoBehaviour
         move = controller.GetComponent<PlayerController>();
         order = gameflow.GetComponent<gameflow>();
         timerDisplay = -1.0f; // set timer to negative
+        ordersystem = OrderSystem.GetComponent<OrderSystem>();
     }
 
     // Update is called once per frame
@@ -85,7 +89,7 @@ public class BobaShakerGame : MonoBehaviour
                         timerDisplay = displayTime;
                         resulttext.SetText("Success!");
                         results.SetActive(true); // show success box
-                        // and set bool = true for next order
+                        ordersystem.orderCompleted = true;
 
                         audiosource.PlayOneShot(cash);
                     }
@@ -93,6 +97,7 @@ public class BobaShakerGame : MonoBehaviour
                     {
                         resulttext.SetText("Not the right order...");
                         results.SetActive(true);
+                        audiosource.PlayOneShot(error);
                     }
 
                     // else send the user on their way to try again
