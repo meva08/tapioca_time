@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameOverScreen : MonoBehaviour
 {
@@ -10,9 +11,11 @@ public class GameOverScreen : MonoBehaviour
     public countdown timer;
     public playermoney money;
 
-    private void Start()
+    public GameObject canvas;
+
+    void Start()
     {
-        gameObject.SetActive(false);
+        canvas.SetActive(false);
         // Attempt to get the countdown component from the same GameObject
         timer = timer.GetComponent<countdown>();
 
@@ -32,7 +35,7 @@ public class GameOverScreen : MonoBehaviour
         }
     }
 
-    private void Update()
+    void Update()
     {
         // Check if timer and money are properly assigned
         if (timer == null || money == null)
@@ -46,20 +49,45 @@ public class GameOverScreen : MonoBehaviour
         {
 
             // Set the game over screen active
-            gameObject.SetActive(true);
+            canvas.SetActive(true);
 
             Debug.Log("Game Over!");
 
             // Check the player's money and update the outcome text
-            if (money.money >= 200)
+            if (money.money >= 500)
             {
-                outcome.text = "You won!";
+                outcome.text = "A+! You're amazing!";
+            }
+            else if (money.money >= 400)
+            {
+                outcome.text = "A! Solid!";
+            }
+            else if (money.money >= 300)
+            {
+                outcome.text = "B! Pretty good!";
+            }
+            else if (money.money >= 200)
+            {
+                outcome.text = "C! Ok.";
+            }
+             else if (money.money >= 100)
+            {
+                outcome.text = "D! Good effort!";
             }
             else
             {
-                outcome.text = "You lost...";
+                outcome.text = "Uh, did you even try?";
+            }
+
+
+
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                SceneManager.LoadScene("SampleScene");
+                Debug.Log("Button Clicked");
             }
         }
     }
+   
 }
 
