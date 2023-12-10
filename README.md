@@ -3,7 +3,8 @@ CS50 Final Project
 
 **Description:** 
 This final project is a 2D game made in Unity called “Tapioca Time”. You aim to complete as many boba orders as possible to earn money!
-**How to Play: **
+
+**How to Play:**
 	Click on the application icon and you will be able to play the game. Refer to the instructions to below for controls and goals!
 You play as the player figure in the center of the screen. Player controls for movement are attached to the arrow keys or W, A, S, and D keys to move up, right, down, and left respectively. On the bottom left of the screen, there is a timer that will count down from 120 seconds. In the top right of the screen, there is a text box that says “New Order” with a list of ingredients. Your goal is to complete the order given to you and complete as many orders as you can within the time limit. You will get a letter grade depending on how many orders you complete!  
 
