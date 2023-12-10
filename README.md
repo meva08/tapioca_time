@@ -6,7 +6,9 @@ This final project is a 2D game made in Unity called “Tapioca Time”. You aim
 
 **How to Play:**
 
-Click on the application icon and you will be able to play the game. Refer to the instructions to below for controls and goals!
+Please unzip the tapioca-time.zip within the tapioca-time folder to access the app. The game app is most compatible with macOS. Double click the exported app, which should have the icon of a boba. 
+
+Refer to the instructions to below for controls and goals!
 You play as the player figure in the center of the screen. Player controls for movement are attached to the arrow keys or W, A, S, and D keys to move up, right, down, and left respectively. On the bottom left of the screen, there is a timer that will count down from 120 seconds. In the top right of the screen, there is a text box that says “New Order” with a list of ingredients. Your goal is to complete the order given to you and complete as many orders as you can within the time limit. You will get a letter grade depending on how many orders you complete!  
 
 Towards the top of the screen, there is a series of stations. The cabinet on the far left contains Thai Tea. The next station over is a fridge that contains Whole Milk. After the fridge, there is a sink that dumps out all of the contents of your cup. To the left of the sink, there is another fridge that contains Skim Milk. Finally, after the fridge, there is another cabinet that contains Black Tea. 
@@ -19,6 +21,6 @@ Once the timer reaches 0, if you have completed a sufficient amount of orders, y
 
 Please clone this repository to access the files. https://github.com/meva08/tapioca_time
 
-Unity Hub and Unity Editor 2022 3.14 will need to be installed to access the editor screen and see many of the inspector, components, and other details of the game. Within the “assets” folder, click on main.unity to start up the Unity editor. You could also click “add a project” in Unity Hub 
+Unity Hub and Unity Editor 2022 3.14 will need to be installed to access the editor screen and see many of the inspector, components, and other details of the game. Within the “assets” folder, click on main.unity to start up the Unity editor. You could also click “add a project” in Unity Hub.
 In the “Scenes” folder is “SampleScene”, which is where everything is stored and configured. All scripts, sounds, scenes, and art assets are stored within the “Assets” folder and its various subfolders. Scripts are written in C#, use much of Unity’s syntax, and can be opened in VSCode. The comments should explain the logic of the code within each script. 
 
