@@ -763,7 +763,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 151.2, y: -45.7}
+  m_AnchoredPosition: {x: 151.19995, y: -45.69995}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &413616570
@@ -2357,7 +2357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -2911,7 +2911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -3782,15 +3782,15 @@ MonoBehaviour:
   points: 0
   controller: {fileID: 1364499626}
   gameflow: {fileID: 996218863}
+  cam: {fileID: 519420028}
+  ingredientUI: {fileID: 1318639728}
+  OrderSystem: {fileID: 1439322706}
   click: {fileID: 8300000, guid: 1eb7cbaf61d23a64bbd36c0a38b5cb0c, type: 3}
   error: {fileID: 8300000, guid: 1ed8fb76fc64e4e46847348138782234, type: 3}
   cash: {fileID: 8300000, guid: abdbbfd33a46f4549987385f85c536b5, type: 3}
-  cam: {fileID: 519420028}
   shake: {fileID: 541612347}
   results: {fileID: 1933919821}
   resulttext: {fileID: 176622718}
-  ingredientUI: {fileID: 1318639728}
-  OrderSystem: {fileID: 1439322706}
   displayTime: 2
 --- !u!82 &1619757676
 AudioSource:
@@ -4098,6 +4098,14 @@ PrefabInstance:
     - target: {fileID: 5034595546853378876, guid: 74c12dbc3d216ef43ac2df4c724fe28d, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7192806265233641471, guid: 74c12dbc3d216ef43ac2df4c724fe28d, type: 3}
+      propertyPath: m_Size.y
+      value: 2.1284766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7192806265233641471, guid: 74c12dbc3d216ef43ac2df4c724fe28d, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.8557616
       objectReference: {fileID: 0}
     - target: {fileID: 8905096639735672570, guid: 74c12dbc3d216ef43ac2df4c724fe28d, type: 3}
       propertyPath: m_Name
@@ -7613,6 +7621,14 @@ PrefabInstance:
       propertyPath: wholeMilk
       value: 
       objectReference: {fileID: 239135600}
+    - target: {fileID: 7462964387866163840, guid: 4478ec9e0e95fed4d9844d5a03d142ee, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9432417
+      objectReference: {fileID: 0}
+    - target: {fileID: 7462964387866163840, guid: 4478ec9e0e95fed4d9844d5a03d142ee, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.43686575
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
