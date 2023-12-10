@@ -1193,7 +1193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2669769803492193225, guid: b9fa5917fd90c6444a6a5199c81b3aa5, type: 3}
       propertyPath: m_Size.y
-      value: 2.5234652
+      value: 2.610052
       objectReference: {fileID: 0}
     - target: {fileID: 2669769803492193225, guid: b9fa5917fd90c6444a6a5199c81b3aa5, type: 3}
       propertyPath: m_Offset.x
@@ -1201,7 +1201,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2669769803492193225, guid: b9fa5917fd90c6444a6a5199c81b3aa5, type: 3}
       propertyPath: m_Offset.y
-      value: -0.8090677
+      value: -0.7657743
       objectReference: {fileID: 0}
     - target: {fileID: 4725074282769771540, guid: b9fa5917fd90c6444a6a5199c81b3aa5, type: 3}
       propertyPath: m_Layer
@@ -2486,6 +2486,14 @@ PrefabInstance:
     - target: {fileID: 1846465516436971151, guid: d4e52cb03f4e042b2a04747fda7cc732, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2154399507317140313, guid: d4e52cb03f4e042b2a04747fda7cc732, type: 3}
+      propertyPath: m_Size.y
+      value: 2.6240277
+      objectReference: {fileID: 0}
+    - target: {fileID: 2154399507317140313, guid: d4e52cb03f4e042b2a04747fda7cc732, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.75878644
       objectReference: {fileID: 0}
     - target: {fileID: 7356502384920944047, guid: d4e52cb03f4e042b2a04747fda7cc732, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7642,6 +7650,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2669769803492193225, guid: b9fa5917fd90c6444a6a5199c81b3aa5, type: 3}
+      propertyPath: m_Size.y
+      value: 2.6345448
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669769803492193225, guid: b9fa5917fd90c6444a6a5199c81b3aa5, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.7535279
+      objectReference: {fileID: 0}
     - target: {fileID: 4725074282769771540, guid: b9fa5917fd90c6444a6a5199c81b3aa5, type: 3}
       propertyPath: m_Layer
       value: 0
