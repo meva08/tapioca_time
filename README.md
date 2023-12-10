@@ -18,7 +18,8 @@ Once the timer reaches 0, if you have completed a sufficient amount of orders, y
 
 **How to Access the Files:**
 
-Please clone this repository to access the files.
+Please clone this repository to access the files. https://github.com/meva08/tapioca_time
+
 Unity Hub and Unity Editor 2022 3.14 will need to be installed to access the editor screen and see many of the inspector, components, and other details of the game. Within “assets” click on main,unity to start up the Unity editor. You could also click “add a project” in Unity Hub 
 In the “Scenes” folder is “SampleScene”, which is where everything is stored and configured. All scripts, sounds, scenes, and art assets are stored within the “Assets” folder and its various subfolders. Scripts are written in C#, use much of Unity’s syntax, and can be opened in VSCode. The comments should explain the logic of the code within each script. 
 
