@@ -302,8 +302,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1458,7 +1458,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &522695299
 Transform:
   m_ObjectHideFlags: 0
@@ -2185,11 +2185,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 164420222285169743, guid: d66febecdef81f64390423d94645f947, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 164420222285169743, guid: d66febecdef81f64390423d94645f947, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -78
       objectReference: {fileID: 0}
     - target: {fileID: 2660031814074439790, guid: d66febecdef81f64390423d94645f947, type: 3}
       propertyPath: m_Name
@@ -2241,7 +2241,7 @@ PrefabInstance:
       objectReference: {fileID: 1901959740}
     - target: {fileID: 6299252271591118478, guid: d66febecdef81f64390423d94645f947, type: 3}
       propertyPath: m_fontSize
-      value: 36
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6299252271591118478, guid: d66febecdef81f64390423d94645f947, type: 3}
       propertyPath: m_fontAsset
@@ -2249,7 +2249,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: e56c8ce05dbbabb468424cfa7772d41e, type: 2}
     - target: {fileID: 6299252271591118478, guid: d66febecdef81f64390423d94645f947, type: 3}
       propertyPath: m_fontSizeBase
-      value: 36
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6299252271591118478, guid: d66febecdef81f64390423d94645f947, type: 3}
       propertyPath: m_sharedMaterial
@@ -2277,11 +2277,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6325797037712025807, guid: d66febecdef81f64390423d94645f947, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 540
+      value: 383.4162
       objectReference: {fileID: 0}
     - target: {fileID: 6325797037712025807, guid: d66febecdef81f64390423d94645f947, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 540
+      value: 181.6639
       objectReference: {fileID: 0}
     - target: {fileID: 6325797037712025807, guid: d66febecdef81f64390423d94645f947, type: 3}
       propertyPath: m_LocalScale.x
@@ -2297,11 +2297,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6325797037712025807, guid: d66febecdef81f64390423d94645f947, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -148
+      value: -108.854065
       objectReference: {fileID: 0}
     - target: {fileID: 6325797037712025807, guid: d66febecdef81f64390423d94645f947, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -158
+      value: -68.415985
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2658,7 +2658,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mash the X Button!
+  m_text: Mash X to shake the Boba!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e56c8ce05dbbabb468424cfa7772d41e, type: 2}
   m_sharedMaterial: {fileID: -6713024841435390302, guid: e56c8ce05dbbabb468424cfa7772d41e, type: 2}

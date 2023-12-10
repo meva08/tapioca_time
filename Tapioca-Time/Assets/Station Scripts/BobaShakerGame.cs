@@ -37,6 +37,7 @@ public class BobaShakerGame : MonoBehaviour
     public float displayTime = 2.0f; // variables for display time of text
     float timerDisplay;
 
+    bool success;
 
 
     void Start()
@@ -85,18 +86,22 @@ public class BobaShakerGame : MonoBehaviour
                     
                         cam.GetComponent<playermoney>().addMoney(50);// add money
                         shake.SetActive(false); // disable shake instructions
+                        success = true;
                         
-                        timerDisplay = displayTime;
-                        resulttext.SetText("Success!");
-                        results.SetActive(true); // show success box
+                        // timerDisplay = displayTime;
+                        // resulttext.SetText("Success!");
+                        // results.SetActive(true); // show success box
                         ordersystem.orderCompleted = true;
 
                         audiosource.PlayOneShot(cash);
                     }
                     else
                     {
-                        resulttext.SetText("Not the right order...");
-                        results.SetActive(true);
+                        shake.SetActive(false); // disable shake instructions
+                        success = false;
+                        // timerDisplay = displayTime;
+                        // resulttext.SetText("Not the right order...");
+                        // results.SetActive(true);
                         audiosource.PlayOneShot(error);
                     }
 
@@ -130,12 +135,27 @@ public class BobaShakerGame : MonoBehaviour
             }
             else
             {
-                timerDisplay = displayTime;
                 
-                resulttext.SetText("You don't have all the ingredients!");
+               if (success == true)
+               {
+                timerDisplay = displayTime;
+                resulttext.SetText("Delivered! Go do another order!");
+                results.SetActive(true);
+                
+                
+               }
+               else
+               {
+                timerDisplay = displayTime;
+                resulttext.SetText("Wrong order! Try again!");
                 results.SetActive(true);
                 audiosource.PlayOneShot(error);
-                hit = false;
+               }
+               hit = false;
+
+
+
+                
             }
         }
     }
