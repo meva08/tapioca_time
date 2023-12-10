@@ -5,7 +5,8 @@
 Art, Sound, and UI Design:
 	We used free, public online resources for much of the art and music.
  
-**Credits below: **
+**Credits below:**
+
 Tilesets:
 JesusCarrasco (https://reliccastle.com/resources/15/)
 (https://assetstore.unity.com/packages/2d/unity-learn-2d-beginner-tutorial-resources-urp-140167)
@@ -20,6 +21,7 @@ Some of the tileset, the UI icons, and the player character animations were made
 
 
 **Design and Gameplay**
+
 Game objects are essential to creating a game using Unity. They can be thought of as items of the game. Some of them have images so that the user can see and, sometimes, interact with them. Others only have scripts, so they are mostly used to maintain the game flow underneath the hood. In our game, the items that appear on the screen are either designed by ourselves or pulled from online resources. Some of them, such as but not limited to stations and order delivery, are interactable, which is enabled by scripts. 
 
 When the user starts to play, an order is randomly generated. The code script for “Incoming Orders” generates an order and the order is displayed in a dynamic text box at the top right of the screen. However, we work with ingredient IDs and each order comes with an order value that is not shown to the player. Each ingredient adds an integer to the current order’s current value. The type of boba adds a value of 100/200, the tea type adds 10/20, milk type adds 1/2. The ingredient IDs are also added to our current order value as numerical values underneath the hood.
