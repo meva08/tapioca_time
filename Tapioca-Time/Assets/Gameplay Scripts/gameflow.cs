@@ -7,9 +7,10 @@ public class gameflow : MonoBehaviour
     // create placeholders for the order value and current values
     public static int orderValue = 121;
     public static int currentValue = 000 ;
-    public GameObject OrderSystem;
+    public GameObject OrderSystem; 
     OrderSystem ordersystem;
-    public bool getBoba;
+    // create three bool variables to indicate ingredient possession
+    public bool getBoba; 
     public bool getTea;
     public bool getMilk;
     void Start()

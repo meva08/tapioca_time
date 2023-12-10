@@ -6,7 +6,7 @@ using TMPro;
 
 public class OrderSystem : MonoBehaviour
 {
-    public GameObject dialogBox;
+    public GameObject dialogBox; // refer to other gameObjects
     public TMP_Text debugText;
     public bool orderCompleted;
     public int order_value;
@@ -29,7 +29,7 @@ public class OrderSystem : MonoBehaviour
     }
 
 
-    // Static method tox get the name based on the ID
+    // Static method to get the name based on the ID
     public static string GetIngredientName(int id)
     {
         switch (id)

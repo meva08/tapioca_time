@@ -74,7 +74,7 @@ public class Sink : MonoBehaviour
 
 
 
-                order.getMilk = false; // set variable to false - cup is empty
+            order.getMilk = false; // set variable to false - cup is empty
             order.getTea = false;
             order.getBoba = false;
 
