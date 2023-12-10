@@ -2,8 +2,10 @@
 
 **Overall Design:**
 “Tapioca Time” is inspired by Overcooked, except our game is single-player and focuses more on quick reactions and getting familiar with the system.  We wanted to create a cute and lighthearted game within the timeframe!
-Art, Sound, and UI Design:
-	We used free, public online resources for much of the art and music.
+
+**Art, Sound, and UI Design:**
+
+We used free, public online resources for much of the art and music.
  
 **Credits below:**
 
@@ -29,4 +31,5 @@ When the user starts to play, an order is randomly generated. The code script fo
 To interact with the stations, the player has to click X, which activates the function for adding the ingredient and its numerical value to our current value. Ultimately, when the player wants to submit the order, our code compares the current value to the order value to determine whether the player got the order correct. If that is the case, the player gains money through our script that adds money to the player’s account when an order is correctly delivered.
  
 In our game, we also have a timer, which is frame-independent. When the timer hits zero, the game over screen appears and the player can restart the game. The script for the game over screen sets the object active when the time is up, and depending on the money the player collected in 2 minutes, the player will get a letter grade, which is also shown in a dynamic text box within the game over screen. If the player wants to restart, they can click Q, and it will activate the code that restarts the whole game.
+
 We designed the game to be quite simple, but tricky to get a higher grade. This encourages players to play multiple times to master the locations of each station and their reflexes to get that A+, as the player has to figure out where each ingredient is located and the best order to get each ingredient. There are no deep systems or mechanics, but rather lighthearted fun that prioritizes fast thinking and familiarity with the setup of the space. 
