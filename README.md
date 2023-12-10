@@ -2,7 +2,7 @@
 
 **Description:** 
 
-This final project is a 2D game made in Unity called “Tapioca Time”. You aim to complete as many boba orders as possible to earn money!
+This final project is a 2D game made in Unity called “Tapioca Time”. You aim to complete as many boba orders as possible to earn money! Youtube Link to game introduction: https://youtu.be/2-vJ2-jRXQA
 
 **How to Play:**
 
