@@ -15,7 +15,7 @@ There are three more stations at the bottom of the screen. The brown table on th
 Once the timer reaches 0, if you have completed a sufficient amount of orders, you will win. If you have not completed enough orders, you will lose. There will also be the option to replay the level by pressing “Q” once the game-over screen appears.
 
 **How to Access the Files:**
-Please clone this repository to access the files. (Github link)
+Please clone this repository to access the files.
 Unity Hub and Unity Editor 2022 3.14 will need to be installed to access the editor screen and see many of the inspector, components, and other details of the game. Within “assets” click on main,unity to start up the Unity editor. You could also click “add a project” in Unity Hub 
 In the “Scenes” folder is “SampleScene”, which is where everything is stored and configured. All scripts, sounds, scenes, and art assets are stored within the “Assets” folder and its various subfolders. Scripts are written in C#, use much of Unity’s syntax, and can be opened in VSCode. The comments should explain the logic of the code within each script. 
 
