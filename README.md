@@ -1,5 +1,4 @@
 # Tapioca Time!
-CS50 Final Project
 
 **Description:** 
 
