@@ -15,14 +15,11 @@ public class PlayerController : MonoBehaviour
     float horizontal; // use global varaiabl 
     float vertical;
     Vector2 lookDirection = new Vector2(1,0); 
-
-    // Why are you storing the look direction? Because compared to the Robot, Ruby can stand still.  When she stands still, Move X and Y are both 0, so the State Machine doesn’t know which direction to use unless we tell it. 
-
     
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody2d = GetComponent<Rigidbody2D>(); //include the game objet 
+        rigidbody2d = GetComponent<Rigidbody2D>(); //include the game object 
 
         animator = GetComponent<Animator>();
 

@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class GameOverScreen : MonoBehaviour
 {
+    // create text element, timer, canvas, and money variables
     public TMP_Text outcome;
     public countdown timer;
     public playermoney money;
@@ -80,7 +81,7 @@ public class GameOverScreen : MonoBehaviour
             }
 
 
-
+            // reload the game if player presses Q
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 SceneManager.LoadScene("SampleScene");
